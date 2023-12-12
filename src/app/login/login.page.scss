@@ -1,0 +1,91 @@
+#fondo {
+  background-color: #000000;
+  background: url(https://cdn.pixabay.com/photo/2016/03/09/07/24/wall-1245523_1280.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logoE {
+  height: auto;
+  width: 100px;
+}
+
+/* Estilos para el contenedor de color */
+#color {
+  background-color: #fdfafa63; 
+  padding: 20px;
+  width: 95%;
+  border-radius: 10px;  
+  text-align: center;
+  margin-top: 10px;
+  border: #000000 solid;
+}
+
+
+/* Estilos para el título */
+h1 {
+  color: #000000;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+h4 {
+  color: #fdfafa;
+  margin-bottom: 10px;
+
+}
+
+
+/* Estilos para el formulario de inicio de sesión */
+#login input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#login {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  
+  
+}
+
+#b2 {
+  margin-top: 5px;
+}
+
+/* Estilos para el botón de ingresar */
+button {
+  background-color: #000000; 
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border: #fff solid 2px;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+button:hover {
+  background-color: #fefeff; 
+}
+
+/* Estilos para el enlace de registro */
+a {
+  text-decoration: none;
+  color: #ffffff; 
+  display: block;
+  margin-top: 10px;
+}
+
+a:hover {
+  color: #0056b3; /* Cambia el color cuando se pasa el ratón por encima */
+}
+

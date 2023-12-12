@@ -1,0 +1,34 @@
+#fondo {
+  background-color: #0304488c; /* Cambia el color de fondo según tu preferencia */
+  background-image: url("https://cdn.pixabay.com/photo/2016/03/09/07/24/wall-1245523_1280.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 20px;
+  }
+  
+  input {
+    width: 100%; /* Ocupa el 100% del ancho disponible */
+    padding: 10px; /* Añade un espacio alrededor del texto dentro del input */
+    margin-bottom: 10px; /* Añade espacio entre los elementos input */
+  }
+  
+  h1 {
+    font-size: 1.5em; /* Ajusta el tamaño de la fuente según tu preferencia */
+    margin-bottom: 5px; /* Añade espacio entre los elementos h1 */
+  }
+  
+#contenido{
+  place-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0px 5px;
+  border: 5px #000000;
+} 
+
+  tb, th {
+    border: 1px #000000 solid;
+    font-size: .8rem;
+  }
+

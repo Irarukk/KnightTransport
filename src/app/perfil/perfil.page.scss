@@ -1,0 +1,29 @@
+#fondo {
+    background-color: #0304488c; /* Cambia el color de fondo según tu preferencia */
+    background-image: url("https://i.pinimg.com/originals/82/d1/59/82d159d76252f03008f7a2f298c312eb.png");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    color: #ffffff;
+    font-size: 24px; /* Cambia el tamaño de fuente según tu preferencia */
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc; /* Establece un borde */
+    border-radius: 5px; /* Añade bordes redondeados */
+    font-size: 16px; /* Cambia el tamaño de fuente según tu preferencia */
+  }
+  
+  ion-content[fullscreen="true"] {
+    --ion-safe-area-top: 0;
+  }
+  

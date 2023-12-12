@@ -1,20 +1,43 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-menu contentId="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding" id="hamburgesa">
+      <div id="perfil" (click)="perfil()">
+        <h1> Perfil <img src="assets/logo_usuario.png" alt="Profile Icon" class="icon-align color" > </h1>
+      </div>
+      <hr>
+      <div id="viajes" (click)="viajes()">
+        <h1> Viajes <img src="assets/logo_viajes.png" alt="Profile Icon" class="icon-align color" > </h1>
+      </div>
+      <hr>
+      <div id="mapa" (click)="mapa()">
+        <h1> Mapa <img src="assets/logo_mapa.png" alt="Profile Icon" class="icon-align color" > </h1>
+      </div>
+      <hr>
+      <div id="cerrar" (click)="cerrar()">
+        <h1> Cerrar Sesion </h1>
+      </div>
+    </ion-content>
+  </ion-menu>
+  <div class="ion-page" id="main-content">
+    <ion-header>
+      <ion-toolbar>
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Menu</ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content class="ion-padding"> 
+      <div> <img src="https://i.pinimg.com/originals/82/d1/59/82d159d76252f03008f7a2f298c312eb.png" alt=""> </div>
+      Bienvenido a Knight Transport:
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+      En Knight Transport, entendemos la importancia de llegar a tiempo y de manera segura a tus clases en Duoc UC.
+    </ion-content>
   </div>
 </ion-content>
+

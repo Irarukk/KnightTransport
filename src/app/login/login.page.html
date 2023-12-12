@@ -1,0 +1,18 @@
+<ion-content [fullscreen]="true">
+  <div id="fondo">
+    <div id="color">
+      <div id="logo">
+      </div>
+      <h1>Knight Transport</h1>
+      <img id="logoE" src="assets\Logo empresa.png" alt="">
+    </div>
+    <div id="login">
+      <h4>Inicio de sesion</h4>
+      <input id="usuario" type="text" placeholder="usuario" [(ngModel)]="usuario"(focusout)="ingresar()">
+      <input id="contraseña" type="password" placeholder="contraseña" [(ngModel)]="contrasena"(focusout)="ingresar()">
+    </div>
+    <a href="">¿Olvidaste tu contraseña?</a>
+    <button (click)="ingresar()" >Ingresar</button>
+    <button id="b2" (click)="registrarse()" >Registrarse</button>
+  </div>
+</ion-content>  

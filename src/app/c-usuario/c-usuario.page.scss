@@ -1,0 +1,70 @@
+/* Agrega estilos para el contenedor de fondo */
+#fondo {
+    background-color: #000000;
+    background: url(https://cdn.pixabay.com/photo/2016/03/09/07/24/wall-1245523_1280.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Estilos para el contenedor de casillas */
+  #casillas {
+    background-color: #fdfafa63;
+    padding: 20px;
+    width: 95%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 10px;
+    border: #000000 solid;
+  }
+  
+  /* Estilos para el título */
+  h2 {
+    color: #000000;
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Estilos para el botón */
+  button {
+    background-color: #000000; 
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border: #fff solid 2px;
+    border-radius: 5px;
+    font-size: 1em;
+  }
+  
+  button:hover {
+    background-color: #fefeff;
+  }
+  
+  /* Estilos para el enlace de registro */
+  a {
+    text-decoration: none;
+    color: #ffffff;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  a:hover {
+    color: #0056b3;
+  }
+  
+    
+     
+    

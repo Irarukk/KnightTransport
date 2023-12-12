@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <ion-header>
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button default-href="#" (click)="regresar()"></ion-back-button>
+      </ion-buttons>
+      <ion-title>Viajes</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div id="fondo">
+   <div id="contenido">
+    <table>
+      <tr>
+        <th>ID</th>
+        <th>Hora</th>
+        <th>Capacidad</th>
+        <th>Precio</th>
+        <th>Destino</th>
+      </tr>
+      <tr *ngFor="let viaje of viajes">
+        <td>{{ viaje.id }}</td>
+        <td>{{ viaje.hora }}</td>
+        <td>{{ viaje.capacidad }}</td>
+        <td>{{ viaje.precio }}</td>
+        <td>{{ viaje.destino }}</td>
+      </tr>
+   </table>
+   </div>
+  </div>
+</ion-content>
+ 

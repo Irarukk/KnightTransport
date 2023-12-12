@@ -1,0 +1,49 @@
+<ion-content [fullscreen]="true">
+	<ion-header>
+		<ion-toolbar>
+		  <ion-buttons slot="start">
+			<ion-back-button default-href="#" (click)="regresar()"></ion-back-button>
+		  </ion-buttons>
+		  <ion-title>Mapa</ion-title>
+		</ion-toolbar>
+	</ion-header>
+<div id="fondo">
+	<div #map id="map"></div>
+	<div class="texto"></div>
+	
+	<ion-list *ngIf="autocompleteItems" [hidden]="autocompleteItems.length == 0">
+		<ion-item *ngFor="let item of autocompleteItems" tappable (click)="selectSearchResult(item)">
+			{{ item.description }}
+		</ion-item>
+	</ion-list>
+	<div class="inputs">
+		<div class="input">
+			<label for="">Destino</label>
+			<input type="text"  [(ngModel)]="toadd.destino" (input)="updateSearchResults()" placeholder="Destino">
+		</div>
+		<div class="input">
+			<label for="">Precio</label>
+			<input type="text"  [(ngModel)]="toadd.precio"  placeholder="1000">
+		</div>
+		<div class="input">
+			<label for="">Capacidad</label>
+			<input type="text"  [(ngModel)]="toadd.capacidad"  placeholder="4">
+		</div>
+		<div class="input">
+			<label for="">Hora salida</label>
+			<input type="text"  [(ngModel)]="toadd.hora" placeholder="22:30">
+		</div>
+		<button (click)="crearViaje()"> Guardar </button>
+		<h4 [routerLink]="['/viajes']"> Ver Viajes </h4>
+	</div>
+</div>
+</ion-content>
+<script>
+	async function crearViaje(){
+    let viajes = await this.storage.get("viajes") || []
+    this.toadd.id = viajes.length + 1 
+    viajes.push(this.toadd)
+    this.storage.set("viajes", viajes)
+    console.log(viajes)
+  }
+</script>
